@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(194, 69, 188);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+.cover button {
+  padding: 20px 40px;
+  font-size: 24px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s;
+}
+
+.cover button:hover {
+  transform: scale(1.05);
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  display: none;
+}
+
+.image-container {
+  margin-top: 50px;
+}
